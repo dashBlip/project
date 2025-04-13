@@ -51,18 +51,32 @@ ll binpow(ll a, ll b, ll m = MOD) { a %= m; ll res = 1; while (b > 0) { if (b & 
 
 // Solve function
 void solve() {
-    // Your solution goes here
+
+    int c;
+    read(c);
+
+    int p;
+    read(p);
+    int ans=0;
+    int arr[c];
+    forn(i, c) {
+        cin>>arr[i];
+    }
+    forn(i, c){
+        if(arr[i] > p){
+            ans++;
+        }
+    }
+
+    print(ans);
+
     
 }
 
 int main() {
     fastio;
     
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
-    
+       
     int t = 1;
     // cin >> t;  // Uncomment for multiple test cases
     
